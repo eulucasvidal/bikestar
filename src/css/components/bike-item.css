@@ -1,0 +1,60 @@
+.bike-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bike-item-img-list{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.bike-item-img-list img{
+  position: relative;
+}
+.bike-item-img-list ul{
+  position: absolute;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+.bike-item-list li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bike-item-list li img{
+  width: 25px;
+}
+.bike-item-info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+}
+.bike-item-info div{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.bike-item-info p{
+  max-width: 30ch;
+}
+@media(max-width: 768px){
+  .bike-item{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bike-item-img-list{
+    align-items: center;
+    justify-content: center;
+  }
+  .bike-item-img-list ul{
+    position: relative;
+  }
+  .bike-item-info{
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+.header-bg{
+  background-color: var(--cor-12);
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.header-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.header-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}

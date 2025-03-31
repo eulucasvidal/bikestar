@@ -1,0 +1,25 @@
+.intro-bg{
+  background-image: url('../../assets/images/desktop/background/bg-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 200px 0px;
+}
+.intro-content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+}
+.intro-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}

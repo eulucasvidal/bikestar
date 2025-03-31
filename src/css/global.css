@@ -1,0 +1,24 @@
+/* Config de CSS */
+@import './vendor/reset.css';
+/* Config dos Assets */
+@import'../assets/colors/colors.css';
+@import'../assets/fonts/typography.css';
+/* Config Layouts */
+@import './layouts/header.css';
+@import './layouts/footer.css';
+/* Config dos Components */
+/* @import'./components/animate.css'; */
+@import'./components/buttons.css';
+@import'./components/container.css';
+/* @import'./components/mobile-menu.css'; */
+@import'./components/details.css';
+@import'./components/bike-item.css';
+/* @import'./components/input.css'; */
+/* Config da Home */
+@import'./home/intro.css';
+@import'./home/products.css';
+@import'./home/services.css';
+@import'./home/bikes.css';
+@import'./home/slide-brands.css';
+@import'./home/about.css';
+@import'./home/plans.css';

@@ -1,0 +1,67 @@
+.plans-bg{
+  background-color: var(--cor-12);
+}
+.plans{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px;
+}
+.plans-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.plans-item{
+  background-color: var(--cor-11);
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 4px;
+}
+
+.plans-item h2{
+  margin-bottom: 40px;
+}
+
+.plans-item span{
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.plans-item ul{
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+
+.plans-item li{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.plans-item li+li{
+  margin-top: 20px;
+}
+
+.plans-item li::before{
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url(../../assets/images/desktop/icons/details/lista.svg);
+  position: absolute;
+  left: -21px;
+}
+
+@media(max-width:800px){
+  .plans h1{
+    padding-bottom: 40px;
+  }
+  .plans-container{
+      grid-template-columns: 1fr;
+  }
+}
