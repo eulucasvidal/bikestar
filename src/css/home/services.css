@@ -1,7 +1,6 @@
 .services-bg{
-  background-color:var(--cor-11);
+  background-color:var(--color-black-2);
 }
-
 .services{
   display: flex;
   align-items: start;
@@ -16,7 +15,6 @@
   position: sticky;
   top: 155px;
 }
-
  .services-types{
   display: flex;
   flex-direction: column;
@@ -29,26 +27,26 @@
   flex-direction: column;
   gap: 40px;
  }
- .services-itens h3{
-  color: var(--cor-0);
+ .services-itens h2{
+  color: var(--color-white);
  }
  .services-itens img{
   max-width: 600px;
  }
  .services-advantages{
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   gap: 40px;
  }
- .services-advantages h3{
+ .services-advantages span{
+  display: block;
   margin-bottom: 8px;
-  width: max-content;
+
  }
-.services-advantages p{
+.services-advantages span{
   max-width: 30ch;
 }
-
 @media (max-width:1050px){
   .services{
     align-items: center;

@@ -1,5 +1,5 @@
 .brands-bg{
-  background-color: var(--cor-12);
+  background-color: var(--color-black-1);
 }
 .brands{
   overflow: hidden;
@@ -18,11 +18,11 @@
 }
 .brands:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--cor-12));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--color-black-1));
 }
 .brands:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--cor-12));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-black-1));
 }
 .brands img{
   display: initial;

@@ -4,7 +4,7 @@
 }
 
 .products h1{
-  color: var(--cor-12);
+  color: var(--color-black-1);
   margin-bottom: 40px;
 }
 
@@ -46,7 +46,7 @@
   height: 8px;
   width: 12px;
   margin-right: 8px;
-  background-color: var(--cor-p1);
+  background-color: var(--color-yellow);
   transition: width .3s;
 }
 .products a:hover h3::before{
