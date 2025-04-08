@@ -25,7 +25,19 @@
 .btn.secundario:hover{
   background: var(--color-gray);
 }
-
+.btn-seta{
+  padding: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid var(--color-black-1);
+  color: var(--color-black-1);
+}
+.btn-seta:hover{
+  border-color: var(--color-yellow);
+  color: var(--color-yellow);
+}
 /* .btn.seta{
   display: flex;
   align-items: center;

@@ -3,7 +3,6 @@
 }
 .header{
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
@@ -19,4 +18,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+}
+@media (max-width: 1100px) {
+  .header-bg .container{
+    padding: 20px 10px;
+  }
+  .header-list{
+    display: none;
+  }
+  .header-menu{
+    gap: 20px;
+  }
 }
