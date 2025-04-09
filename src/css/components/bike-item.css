@@ -45,6 +45,7 @@
   .bike-item{
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 20px;
   }
   .bike-item-img-list{
     align-items: center;
@@ -56,5 +57,6 @@
   .bike-item-info{
     align-items: center;
     justify-content: center;
+    gap: 15px;
   }
 }
