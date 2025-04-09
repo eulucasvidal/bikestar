@@ -20,7 +20,7 @@
         <a href="./">
           <img src="./src/assets/images/desktop/icons/logo/logo-white.svg" width="136" height="32" alt="Bikecraft" class="logo">
         </a>
-        <nav class="header-menu" aria-label="primaria">
+        <nav class="header-menu" aria-label="primaria" data-menu="suave">
             <button data-menu="button">
               <span id="button-hamburguer"></span>
             </button>
@@ -28,10 +28,10 @@
             <li><a href="./bicicletas.html" class="links-menu">Bicicletas</a></li>
             <li><a href="./seguros.html" class="links-menu">Seguros</a></li>
             <li><a href="./contato.html" class="links-menu">Contato</a></li>
+            <li><a href="#"><button class="btn">explorar</button></a></li>
           </ul>
-          <a href="#">
-            <button class="btn">explorar</button>
-          </a>
+          <a href="#"></a><lord-icon src="https://cdn.lordicon.com/ggirntso.json" trigger="hover" stroke="bold" colors="primary:#fcc002,secondary:#ffbb00">
+          </lord-icon>
         </nav>
       </div>
     </div>
@@ -160,32 +160,31 @@
       <article class="container">
         <div class="bikes">
           <h1 class="title">escolha a sua<span class="color-yellow">.</span></h1>
-        <div class="bikes-slide">
-          <button class="btn-seta"><i class="fa-solid fa-arrow-left"></i></button>
-            <div class="slide">
-              <div class="bike-item">
-                <div class="bike-item-img-list">
-                  <img src="./src/assets/images/desktop/bikes/bike-venda-1.jpg" alt="">
-                  <ul class="bike-item-list color-gray">
-                    <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/eletrica.svg" alt="">Motor Elétrico</li>
-                    <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/carbono.svg" alt="">Fibra de Carbono</li>
-                    <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/velocidade.svg" alt="">50 km/h</li>
-                    <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/rastreador.svg" alt="">Rastreador</li>
-                  </ul>
-                </div>
-                <div class="bike-item-info">
-                  <h3 class="font-1-l">Magic Night</h3>
-                  <p class="paragraph color-light-gray">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-                  <div>
-                    <span class="text-info color-gray">R$ 2499</span>
-                    <a href="#"><button class="btn">mais sobre</button></a>
+          <div class="bikes-slide">
+            <ul class="slide">
+              <li>
+                <div class="bike-item">
+                  <div class="bike-item-img-list">
+                    <img src="./src/assets/images/desktop/bikes/bike-venda-1.jpg" alt="">
+                    <ul class="bike-item-list color-gray">
+                      <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/eletrica.svg" alt="">Motor Elétrico</li>
+                      <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/carbono.svg" alt="">Fibra de Carbono</li>
+                      <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/velocidade.svg" alt="">50 km/h</li>
+                      <li class="text-info color-gray"><img src="./src/assets/images/desktop/icons/details/rastreador.svg" alt="">Rastreador</li>
+                    </ul>
+                  </div>
+                  <div class="bike-item-info">
+                    <h3 class="font-1-l">Magic Night</h3>
+                    <p class="paragraph color-light-gray">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                    <div>
+                      <span class="text-info color-gray">R$ 2499</span>
+                      <a href="#"><button class="btn">mais sobre</button></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            
-          <button class="btn-seta"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
     </section>
@@ -316,6 +315,7 @@
       </div>
     </div>
   </footer>
+  <script type="module" src="./src/js/global.js"></script>
 </body>
 
 </html>

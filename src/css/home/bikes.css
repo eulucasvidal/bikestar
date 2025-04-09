@@ -4,9 +4,3 @@
 .bikes h1{
   color: var(--color-black-1);
 }
-.bikes-slide{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}

@@ -15,8 +15,8 @@
 }
 .bike-item-img-list ul{
   position: absolute;
-  padding-bottom: 40px;
-  padding-right: 40px;
+  padding-bottom: 50px;
+  max-width: 250px;
 }
 .bike-item-list li{
   display: flex;
