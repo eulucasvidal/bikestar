@@ -41,9 +41,9 @@
 
 .manual-btn,
 .nav-auto div{
-  border: 2px solid var(--color-black-1);
-  border-radius: 5px;
-  padding: 5px;
+  border: 1px solid var(--color-black-1);
+  padding: 3px 15px;
+  border-radius: 20px;
   cursor: pointer;
   transition: 0.2s;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
