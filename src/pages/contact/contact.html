@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../src/css/global.css">
-  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="contact.css">
   <script src="https://kit.fontawesome.com/ff7cccf4ba.js" crossorigin="anonymous"></script>
   <script src="https://cdn.lordicon.com/lordicon.js"></script>
   <title>Bikestar - Os melhores serviços</title>
 </head>
 
-<body>
+<body id="contato">
   <header class="header-bg">
     <div class="container">
       <div class="header">
@@ -37,7 +37,138 @@
       </div>
     </div>
   </header>
-    <footer class="footer-bg">
+  <main class="contact-bg">
+    <section class="">
+      <article class="container">
+        <div class="contact">
+          <div>
+            <span class="span-text color-light-gray">Respostas em até 24hrs.</span>
+            <h1 class="title">Contato<span class="color-yellow">.</span></h1>
+          </div>
+          <div class="contact-info">
+            <div class="question-item">
+              <div class="question-info">
+                <span class="span-text">Principais duvidas</span>
+                <h2 class="font-1-l">Duvidas frequentes sobre</h2>
+                <p class="paragraph">Tem alguma dúvida sobre a Bikestar ou precisa de ajuda com sua bicicleta?</p>
+              </div>
+              <button class="btn-questions font-1-m">Saiba mais</button>
+            </div>
+            <div class="question-item">
+              <div class="question-info">
+                <span class="span-text">Principais duvidas</span>
+                <h2 class="font-1-l">Duvidas frequentes sobre</h2>
+                <p class="paragraph">Tem alguma dúvida sobre a Bikestar ou precisa de ajuda com sua bicicleta?</p>
+              </div>
+              <button class="btn-questions font-1-m">Saiba mais</button>
+            </div>
+            <div class="question-item">
+              <div class="question-info">
+                <span class="span-text">Principais duvidas</span>
+                <h2 class="font-1-l">Duvidas frequentes sobre</h2>
+                <p class="paragraph">Tem alguma dúvida sobre a Bikestar ou precisa de ajuda com sua bicicleta?</p>
+              </div>
+              <button class="btn-questions font-1-m">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div class="contato container">
+      <section class="contato-dados" aria-label="Endereço">
+        <h2 class="font-1-m color-white">Loja Online</h2>
+        <div class="contato-endereco font-1-s color-light-gray">
+          <p>R. Gilberto Lopes da Silva, 2199</p>
+          <p>São José do Rio Preto, SP</p>
+          <p>Brasil</p>
+        </div>
+
+        <address class="contato-meios font-1-s color-light-gray">
+          <a href="mailto:contato@bikcraft.com">shoprp@bikcraft.com</a>
+          <a href="mailto:assistencia@bikcraft.com">assistencia.shoprp@bikcraft.com</a>
+          <a href="tel:+55 21 9999-9999">+55 17 99781-1899</a>
+        </address>
+
+        <div class="contato-redes">
+          <a href="./">
+            <lord-icon src="https://cdn.lordicon.com/tgyvxauj.json" trigger="hover" stroke="bold" colors="primary:#fcc002,secondary:#fcc002">
+            </lord-icon>
+          </a>
+          <a href="./">
+            <lord-icon src="https://cdn.lordicon.com/bfoumeno.json" trigger="hover" stroke="bold" colors="primary:#fcc002,secondary:#fcc002">
+            </lord-icon>
+          </a>
+          <a href="./">
+            <lord-icon src="https://cdn.lordicon.com/lyjuidpq.json" trigger="hover" stroke="bold" colors="primary:#fcc002,secondary:#fcc002">
+            </lord-icon>
+          </a>
+        </div>
+      </section>
+
+      <section class="contato-formulario" aria-label="Formulário">
+        <form class="form" action="./contato.html">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          </div>
+
+          <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+          </div>
+
+          <div class="col-2">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="xxxxxxxx@email.com">
+          </div>
+
+          <div class="col-2">
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+          </div>
+
+          <button class="btn col-2">Enviar Mensagem</button>
+        </form>
+      </section>
+    </div>
+
+    <article class="lojas container">
+        <h2  class="subtitle color-white">lojas locais<span class="color-yellow">.</span></h2>
+        <div class="lojas-item">
+            <img src="../../assets/images/desktop/stores/rj.jpg" alt="mapa marcando o endereço em Rua Ali Perto, 25 - Rio de Janeiro - RJ">
+            <div class="lojas-conteudo">
+                <h3 class="font-1-l">Rio de Janeiro</h3>
+                <div class="lojas-dados font-1-s color-gray">
+                    <p>Rua Ali Perto, 25</p>
+                    <p>Rio de Janeiro - RJ</p>
+                </div>
+                <div class="lojas-dados font-1-s color-gray">
+                    <a href="mailto:rj@bikcraft.com">rj@bikcraft.com</a>
+                    <a href="tel:+55 21 9999-9999">+55 21 9999-9999</a>
+                </div>
+                <span class="lojas-tempo font-1-s"><img src="../../assets/images/desktop/icons/details/horario.svg" alt=""> 08-18h de seg à dom</span>
+            </div>
+        </div>
+
+        <div class="lojas-item">
+            <img src="../../assets/images/desktop/stores/sp.jpg" alt="mapa marcando o endereço em Rua Ali Perto, 25 - São Paulo - SP">
+            <div class="lojas-conteudo">
+                <h3 class="font-1-xl">São Paulo</h3>
+                <div class="lojas-dados font-1-s color-gray">
+                    <p>Rua Ali Perto, 25</p>
+                    <p>Rio de Janeiro - RJ</p>
+                </div>
+                <div class="lojas-dados font-1-s color-gray">
+                    <a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a>
+                    <a href="tel:+55 11 9999-9999">+55 21 9999-9999</a>
+                </div>
+                <span class="lojas-tempo font-1-s">
+                  <img src="../../assets/images/desktop/icons/details/horario.svg" alt=""> 08-18h de seg à dom</span>
+            </div>
+        </div>
+    </article>
+  </main>
+  <footer class="footer-bg">
     <div class="footer">
       <div class="footer-info">
         <img src="../../../src/assets/images/desktop/icons/logo/logo-black.svg" alt="" class="logo">
@@ -84,4 +215,6 @@
       </div>
     </div>
   </footer>
-  </body>
+  <script type="module" src="../../../src/js/global.js"></script>
+</body>
+</html>

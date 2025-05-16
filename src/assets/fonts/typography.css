@@ -1,6 +1,9 @@
 /* Fontes que não são muito usadas no Projeto */
-.font-1-s{
+.font-1-xs{
   font: 400 0.75rem/1.35 'Poppins',sans-serif;
+}
+.font-1-s{
+  font: 400 1rem/1.35 'Poppins',sans-serif;
 }
 .font-1-m {
   font: 600 1.5rem/1.5 "Poppins", sans-serif;
