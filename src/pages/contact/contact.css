@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  gap: 30px;
 }
 .question-item{
   background-color: var(--color-white);
@@ -38,11 +38,19 @@
   font: 500 1.2rem/1.2 "Poppins", sans-serif;
 }
 .btn-questions:hover{
-  background-color: var(--color-black-1);
-  color: var(--color-white);
+  background-color: var(--color-yellow);
 }
 
-
+@media(max-width:900px){
+  .contact-info{
+    flex-direction: column;
+    gap: 40px;
+  }
+  .question-item{
+    width: 100%;
+    max-height: 250px;
+  }
+}
 
 /* Configurações de Input */
 #contato{
