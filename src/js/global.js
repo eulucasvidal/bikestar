@@ -3,3 +3,6 @@ initToggleMenu();
 
 import initBikeSlide from "./modules/slide-bikes.js";
 initBikeSlide();
+
+import initLinkAtivo from "./modules/link-ativo.js";
+initLinkAtivo();

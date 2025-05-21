@@ -4,7 +4,7 @@
   border: none;
   background: none;
 }
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
   [data-menu="button"]{
     display: block;
   }
