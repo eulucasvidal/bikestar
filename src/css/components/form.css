@@ -2,7 +2,7 @@
     background: linear-gradient(var(--color-gray)600px,var(--color-white)0px);
 }
 
-.contact{
+.contact-mail{
     display: grid;
     grid-template-columns: 5fr 7fr;
 }
@@ -69,7 +69,7 @@
 }
 
 @media(max-width:800px){
-    .contact{
+    .contact-mail{
         grid-template-columns: 1fr;
     }
     .contact-data,

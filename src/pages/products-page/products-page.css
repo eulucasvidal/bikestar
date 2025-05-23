@@ -5,7 +5,7 @@
   padding-bottom: 50px;
 }
 .intro-products-bg{
-  background-image: url('../../assets/images/desktop/background/bg-3.jpg');
+  background-image: url('../../assets/images/desktop/background/bg-4.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,22 +24,143 @@
   padding: 20px;
   gap: 40px;
 }
+.products-filter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px;
+  gap: 15px;
+  position: relative;
+}
+.products-filter-list{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 
 @media (max-width: 1200px){
   .products-list{
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
+  .products-filter{
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 650px){
   .products-list{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .products-filter-list{
+    justify-content: center;
   }
 }
 /* Filter Button */
-.products-filter-list{
+.select{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+#category-select label{
+  font: 600 1rem/1.35 'Poppins',sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.0225rem;
+
+}
+
+#select-button{
+  margin-top: .5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
+  padding: 0.75rem;
+
+  min-width:10rem;
+
+  border-radius: .375rem;
+  border: 1px solid var(--color-light-gray);
+  background: var(--color-white);
+}
+
+#selected-value{
+  color: var(--color-gray);
+  font: 400 1rem/1.35 'Poppins',sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.02625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+#options-view-button:focus + #select-button,
+#options-view-button:checked + #select-button{
+  outline: 2px solid var(--color-yellow);
+}
+
+#category-select:has(#options-view-button:checked) label,
+#options-view-button:checked + #select-button{
+  color: var(--color-yellow);
+}
+
+#category-select{
+  position: relative;
+}
+#options-view-button{
+  all: unset;
+
+  position: absolute;
+  inset: 0;
+
+  cursor: pointer;
+  z-index: 3;
+}
+
+#options{
+  margin-top: .25rem;
+
+  border-radius: .375rem;
+  border: 1px solid var(--color-light-gray);
+  background: var(--color-white);
+
+  display: none;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem;
+  border-bottom: 1px solid var(--color-light-gray);
+  position: relative;
+    font: 400 1rem/1.35 'Poppins',sans-serif;
+  text-transform: capitalize;
+}
+
+.option:has(input:checked),
+.option:hover{
+  background: var(--color-light-gray);
+}
+
+.option:has(input:focus){
+  outline: 1px solid var(--color-yellow);
+}
+
+.option input[type="radio"]{
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+#category-select:has(#options-view-button:checked) + #options{
+  display: block;
+}
+.select:has(.option input:checked) #categlory-select label{
+  color: var(--color-yellow);
 }
