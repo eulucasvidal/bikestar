@@ -39,4 +39,42 @@ inputsOptions.forEach((input) => {
       });
     });
   });
-console.log(buttonsFilter)
+
+  // Config do Ordem de preço
+
+  const options = document.querySelectorAll('#options input[name="category"]');
+const productsList = document.querySelector('.products-list');
+
+options.forEach(option => {
+  option.addEventListener('change', () => {
+    const selectedValue = option.value; // "menor preço" ou "maior preço"
+
+    // Pega todos os produtos como array
+    const productsArray = Array.from(productsList.querySelectorAll('.products-item'));
+
+    // Função para extrair preço
+    function getPrice(productItem) {
+      const priceSpan = productItem.querySelector('span.text-info.color-gray');
+      if (!priceSpan) return 0;
+      const priceText = priceSpan.textContent.trim();
+      let num = priceText.replace('R$', '').replace(/\./g, '').replace(',', '.').trim();
+      return parseFloat(num) || 0;
+    }
+
+    // Ordena o array
+    productsArray.sort((a, b) => {
+      const priceA = getPrice(a);
+      const priceB = getPrice(b);
+
+      if (selectedValue === 'menor preço') {
+        return priceA - priceB;
+      } else {
+        return priceB - priceA;
+      }
+    });
+
+    // Remove todos os produtos e re-insere ordenados
+    productsList.innerHTML = '';
+    productsArray.forEach(item => productsList.appendChild(item));
+  });
+});
