@@ -14,3 +14,29 @@ inputsOptions.forEach((input) => {
     isMouseOrTouch && optionsViewButton.click();
   });
 });
+
+// Config do filter
+
+  const botoesFiltro = document.querySelectorAll('.filter-buttons .btn');
+  const produtos = document.querySelectorAll('.products-item');
+
+  botoesFiltro.forEach(botao => {
+    botao.addEventListener('click', () => {
+      const filtro = botao.getAttribute('data-filter');
+
+      botoesFiltro.forEach(btn => btn.classList.remove('secundario'));
+
+      botao.classList.add('secundario');
+
+      produtos.forEach(produto => {
+        const categoria = produto.getAttribute('data-categoria');
+
+        if (filtro === 'todos' || filtro === categoria) {
+          produto.style.display = 'block';
+        } else {
+          produto.style.display = 'none';
+        }
+      });
+    });
+  });
+console.log(buttonsFilter)

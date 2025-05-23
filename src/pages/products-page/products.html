@@ -47,6 +47,7 @@
           </div>
         </article>
       </section>
+
       <section class="products-filter-bg">
         <article class="container">
 
@@ -82,20 +83,21 @@
           </div>
 
           <div>
-            <ul class="products-filter-list">
-              <li><a href="#" class="btn">Todos produtos</a></li>
-              <li><a href="#" class="btn secundario">mountain</a></li>
-              <li><a href="#" class="btn secundario">speed</a></li>
-              <li><a href="#" class="btn secundario">casual</a></li>
-              <li><a href="#" class="btn secundario">bmx</a></li>
+            <ul class="filter-buttons">
+              <li><button class="btn secundario" data-filter="todos">Todos produtos</button></li>
+              <li><button class="btn" data-filter="mtb">mountain</button></li>
+              <li><button class="btn" data-filter="speed">speed</button></li>
+              <li><button class="btn" data-filter="casual">casual</button></li>
+              <li><button class="btn" data-filter="bmx">bmx</button></li>
             </ul>
           </div>
         </article>
       </section>
+
       <section>
         <article class="container">
           <ul class="products-list">
-            <li class="products-item">
+            <li class="products-item" data-categoria="bmx">
               <a href="./bicicletas/magic.html">
                 <img src="../../assets/images/desktop/bikes/bikestar1.jpg" alt="Bicicleta preta" width="920" height="1040" width="920" height="1040">
                 <h3 class="font-1-m">Nitro Jump Star</h3>
@@ -105,7 +107,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="mtb">
               <a href="./bicicletas/nimbus.html">
                 <img src="../../assets/images/desktop/bikes/bikestar2.jpg" alt="Bicicleta preta" width="920" height="1040">
                 <h3 class="font-1-m">Extreme Trail Star</h3>
@@ -115,7 +117,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="speed">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar3.jpg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">Fastline Star</h3>
@@ -125,7 +127,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="bmx">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar4.jpg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">Urban Stunt Star</h3>
@@ -135,7 +137,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="casual">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar5.jpeg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">City Ride Star</h3>
@@ -145,7 +147,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="mtb">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar6.jpeg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">Wild Peak Star</h3>
@@ -155,7 +157,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="speed">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar7.jpg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">Carbon Sprint Star</h3>
@@ -165,7 +167,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="bmx">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar8.jpg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">Spin Trick Star</h3>
@@ -175,7 +177,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="mtb">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar9.jpeg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">Rock Climber Star</h3>
@@ -185,7 +187,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="casual">
               <a href="./bicicletas/nebula.html">
                 <img src="../../assets/images/desktop/bikes/bikestar10.jpeg" alt="Bicicleta branca" width="920" height="1040">
                 <h3 class="font-1-m">Urban Flow Star</h3>
@@ -195,7 +197,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="speed">
               <a href="./bicicletas/magic.html">
                 <img src="../../assets/images/desktop/bikes/bikestar11.jpg" alt="Bicicleta preta" width="920" height="1040" width="920" height="1040">
                 <h3 class="font-1-m">Velocity Pro Star</h3>
@@ -205,7 +207,7 @@
                 </div>
               </a>
             </li>
-            <li class="products-item">
+            <li class="products-item" data-categoria="casual">
               <a href="./bicicletas/nimbus.html">
                 <img src="../../assets/images/desktop/bikes/bikestar12.jpeg" alt="Bicicleta preta" width="920" height="1040">
                 <h3 class="font-1-m">Smooth Cruise Star</h3>
