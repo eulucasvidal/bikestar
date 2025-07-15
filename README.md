@@ -1,14 +1,16 @@
 [JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript
-[REACT__BADGE]: https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react
 [FIGMA__BADGE]:https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white
+[CSS3__BADGE]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
+[HTML5__BADGE]:https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
-[PROJECT__URL]: https://devlucasgoncalves.netlify.app/
+[PROJECT__URL]: https://mybikestar.netlify.app/
 
-<h1 align="center" style="font-weight: bold;">Bikestar 💻</h1>
+<h1 align="center" style="font-weight: bold;">BikeStar - Blog e Loja de Bicicletas 🚲</h1>
 
-![react][REACT__BADGE]
-![figma][FIGMA__BADGE]
+![html5][HTML5__BADGE]
+![css3][CSS3__BADGE]
 ![javascript][JAVASCRIPT__BADGE]
+![figma][FIGMA__BADGE]
 
 <p align="center">
  <a href="#about">Sobre</a> • 
@@ -20,12 +22,19 @@
 
 
 <p align="center">
-    <img width="800" height="512" alt="Image" src="https://github.com/user-attachments/assets/4fbda810-e74b-470d-888d-e8d5ed796c17" />
+    <img width="800" height="512" alt="Image" src="https://github.com/user-attachments/assets/62616105-afbe-47b7-ad46-c98a12e75ccf" />
 </p>
 
 <h2 id="started">📌 Sobre</h2>
 
-Desenvolvido em React, este portfólio demonstra minhas habilidades como desenvolvedor front-end. O projeto reflete meu aprendizado e aplicação prática, e estou animado para compartilhar essa jornada com futuros empregadores.
+Este projeto é uma versão aprimorada do "BikeCraft" da Origamid, usando HTML, CSS e JavaScript. O foco foi melhorar a experiência do usuário (UX) e o design da interface (UI), além de outras funcionalidades utilizando JS.
+
+<h3>Melhorias Implementadas:</h3>
+UX/UI Aprimorado: Navegação mais intuitiva e agradável além de transformar em um visual mais moderno.
+
+Sistema de Validação: Garantia da integridade dos dados inseridos.
+
+O projeto está 85% finalizado e estou planejando adicionar uma API de localização em breve.
 
 [![project][PROJECT__BADGE]][PROJECT__URL]
 
@@ -45,12 +54,12 @@ Certifique-se de ter instalado:
 Como clonar o repositório
 
 ```bash
-git clone https://github.com/eulucasvidal/portfolio.git
+git clone https://github.com/eulucasvidal/bikestar.git
 ```
 
 <h3>Iniciar</h3>
 
-How to start your project
+Como iniciar o projeto
 
 ```bash
 cd portfolio
