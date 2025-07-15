@@ -62,7 +62,7 @@ git clone https://github.com/eulucasvidal/bikestar.git
 Como iniciar o projeto
 
 ```bash
-cd portfolio
+cd bikestar
 npm start
 ```
 
